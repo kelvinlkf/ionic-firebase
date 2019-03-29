@@ -1,0 +1,7 @@
+{
+  "name": "beam-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

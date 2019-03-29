@@ -1,0 +1,42 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>IonFire Chat</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding id="signInPage">
+
+  <div class="flex">
+    <div></div>
+    <div id="signInForm">
+      <p class="title">Sign In</p>
+      <ion-list>
+
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="email" [(ngModel)]="loginForm.email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="loginForm.password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <button ion-button large block (click)="loginUser()">Sign In</button>
+        </ion-item>
+
+        <ion-item text-center>
+          <!-- <button ion-button (click)="fbLogin()">FB login</button>
+          <button ion-button (click)="googleLogin()">Google login</button> -->
+          <button ion-button (click)="register()">Register</button>
+        </ion-item>
+
+      </ion-list>
+    </div>
+    <div></div>
+  </div>
+
+</ion-content>
